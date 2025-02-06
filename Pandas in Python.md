@@ -1,4 +1,4 @@
-# Pandas in Python
+# Pandas in 
 
 ## Table of Contents
 
@@ -41,15 +41,11 @@
 
 ### What is Pandas?
 
-Pandas is an open-source data manipulation and analysis library for Python. It provides data structures and functions needed to manipulate structured data, including functions for reading and writing data, handling missing data, filtering, sorting, and more.
+Pandas is an open-source data manipulation and analysis library for . It provides data structures and functions needed to manipulate structured data, including functions for reading and writing data, handling missing data, filtering, sorting, and more.
 
 ### Installation and Setup
 
 You can install Pandas using pip:
-
-bash
-
-Copy
 
 ```
 pip install pandas
@@ -58,10 +54,6 @@ pip install pandas
 ### Importing Pandas
 
 To use Pandas, you need to import it:
-
-python
-
-Copy
 
 ```
 import pandas as pd
@@ -75,9 +67,9 @@ import pandas as pd
 
 A Series is a one-dimensional array-like object that can hold any data type. It is similar to a column in a spreadsheet.
 
-python
 
-Copy
+
+
 
 ```
 import pandas as pd
@@ -91,9 +83,9 @@ print(s)
 
 A DataFrame is a two-dimensional, size-mutable, and potentially heterogeneous tabular data structure with labeled axes (rows and columns).
 
-python
 
-Copy
+
+
 
 ```
 # Creating a DataFrame
@@ -115,9 +107,9 @@ print(df)
 
 You can create Series and DataFrames from lists, dictionaries, and other data structures.
 
-python
 
-Copy
+
+
 
 ```
 # From a list
@@ -132,9 +124,9 @@ df = pd.DataFrame(data)
 
 You can select data using labels or positions.
 
-python
 
-Copy
+
+
 
 ```
 # Selecting a column
@@ -151,9 +143,9 @@ row = df.iloc[0]
 
 Inspect the first few rows, last few rows, and summary statistics.
 
-python
 
-Copy
+
+
 
 ```
 df.head()  # First 5 rows
@@ -166,9 +158,9 @@ df.describe()  # Statistical summary
 
 Handle missing data, duplicates, and incorrect data types.
 
-python
 
-Copy
+
+
 
 ```
 # Drop rows with missing values
@@ -185,9 +177,9 @@ df.drop_duplicates()
 
 Pandas provides methods to handle missing data.
 
-python
 
-Copy
+
+
 
 ```
 # Check for missing values
@@ -204,9 +196,9 @@ df.fillna(0)
 
 Filter data based on conditions.
 
-python
 
-Copy
+
+
 
 ```
 # Filter rows where Age is greater than 30
@@ -217,9 +209,9 @@ df[df['Age'] > 30]
 
 Sort data by one or more columns.
 
-python
 
-Copy
+
+
 
 ```
 # Sort by Age
@@ -237,9 +229,9 @@ df.sort_values(by=['Age', 'Name'])
 
 Add or remove columns from a DataFrame.
 
-python
 
-Copy
+
+
 
 ```
 # Add a new column
@@ -253,9 +245,9 @@ df.drop('Salary', axis=1, inplace=True)
 
 Apply functions to data.
 
-python
 
-Copy
+
+
 
 ```
 # Apply a function to a column
@@ -266,9 +258,9 @@ df['Age'] = df['Age'].apply(lambda x: x + 1)
 
 Group data and perform aggregate operations.
 
-python
 
-Copy
+
+
 
 ```
 # Group by City and calculate mean Age
@@ -279,9 +271,9 @@ df.groupby('City')['Age'].mean()
 
 Combine DataFrames.
 
-python
 
-Copy
+
+
 
 ```
 # Concatenate DataFrames
@@ -299,9 +291,9 @@ result = pd.merge(df1, df2, on='key')
 
 Reshape data.
 
-python
 
-Copy
+
+
 
 ```
 # Pivot
@@ -319,9 +311,9 @@ pd.melt(df, id_vars=['Name'], value_vars=['Age', 'Salary'])
 
 Work with hierarchical indexing.
 
-python
 
-Copy
+
+
 
 ```
 # Create a MultiIndex DataFrame
@@ -334,9 +326,9 @@ df = pd.DataFrame({'Value': [10, 20, 30, 40]}, index=index)
 
 Handle time series data.
 
-python
 
-Copy
+
+
 
 ```
 # Create a time series
@@ -351,9 +343,9 @@ df.resample('M').mean()
 
 Work with categorical data.
 
-python
 
-Copy
+
+
 
 ```
 # Convert to categorical
@@ -364,9 +356,9 @@ df['City'] = df['City'].astype('category')
 
 Manipulate text data.
 
-python
 
-Copy
+
+
 
 ```
 # Convert to lowercase
@@ -380,9 +372,9 @@ df['Name'].str.split(' ')
 
 Optimize performance using techniques like vectorization.
 
-python
 
-Copy
+
+
 
 ```
 # Vectorized operations
@@ -397,9 +389,9 @@ df['Age'] = df['Age'] + 1
 
 Read and write data from/to various formats.
 
-python
 
-Copy
+
+
 
 ```
 # Read CSV
@@ -428,9 +420,9 @@ df = pd.read_sql_query('SELECT * FROM table_name', conn)
 
 Create basic plots directly from DataFrames.
 
-python
 
-Copy
+
+
 
 ```
 # Line plot
@@ -451,9 +443,9 @@ df['Age'].plot(kind='hist')
 
 Clean a dataset by handling missing values, removing duplicates, and correcting data types.
 
-python
 
-Copy
+
+
 
 ```
 # Load data
@@ -473,9 +465,9 @@ df['Age'] = df['Age'].astype(int)
 
 Perform a basic data analysis by grouping data and calculating summary statistics.
 
-python
 
-Copy
+
+
 
 ```
 # Group by City and calculate mean Age
@@ -489,9 +481,9 @@ df.corr()
 
 Analyze time series data by resampling and plotting.
 
-python
 
-Copy
+
+
 
 ```
 # Resample time series data
